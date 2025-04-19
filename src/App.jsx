@@ -19,7 +19,7 @@ const BinarySearchVisualizer = () => {
     if (autoPlay && currentStep < steps.length) {
       const timer = setTimeout(() => {
         setCurrentStep((prev) => prev + 1);
-      }, 10000);
+      }, 1800);
       return () => clearTimeout(timer);
     }
   }, [currentStep, autoPlay, steps]);
